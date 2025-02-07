@@ -1,0 +1,77 @@
+p{
+    color:black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.Highlight{
+    color: black;
+}
+#Title{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+input[type="text"],input[type="email"],#nameInput{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;  /* Changed */
+    box-sizing: border-box; 
+}
+button:hover{
+    width:100%;
+    margin: 10px 0;
+    background-color: #ccc;
+    cursor: pointer;
+    text-align: center;
+}
+button{
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+input:focus{
+    border:2px dotted blue;
+}
+div span{
+    color: black;
+}
+span{
+    color:black;
+}
+div>span{
+    color: black;
+}
+.Box{
+    width: 100%;
+    background-color: lightgray;
+    padding:20px;
+    text-align: center;
+}
+.container{
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: lightblue;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.mercy{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex: basis 100px;
+}
+@media (max-width: 600px){
+    body{
+        background-color: black;
+    }
+}

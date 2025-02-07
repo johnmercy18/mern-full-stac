@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p, span {
+    font-size: 16px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for .Box class */
+.Box {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Flexbox container for items */
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    width: 30%;  /* Each item takes 30% of the container width */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets (max-width 768px) */
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+    }
+
+    .item {
+        width: 45%;  /* Items take up 45% of the container width */
+    }
+
+    input, button {
+        width: 90%;  /* Make inputs and button slightly smaller */
+    }
+}
+
+/* For mobile (max-width 480px) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;  /* Stack items vertically */
+    }
+
+    .item {
+        width: 100%;  /* Items take up 100% of the container width */
+    }
+
+    input, button {
+        width: 100%;  /* Inputs and button take up the full width */
+    }
+}
